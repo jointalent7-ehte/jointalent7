@@ -23,6 +23,7 @@ Open `index.html` in a web browser.
 - Love reactions.
 - Upload flow for photos and videos.
 - Side-by-side live challenge screen.
+- Challenge-first first wave section for early talent, sports, and gaming challengers.
 - Sports challenge and team features.
 - Mobile game challenge section for games like PUBG Mobile and Mech Arena.
 - Local booking redirect buttons.

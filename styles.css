@@ -299,6 +299,7 @@ button {
 .challenge-stage,
 .expert-panel,
 .contribution-panel,
+.wave-panel,
 .upload-panel {
   background: #fff;
 }
@@ -344,6 +345,7 @@ button {
 .challenge-stage,
 .expert-panel,
 .contribution-panel,
+.wave-panel,
 .upload-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -425,6 +427,7 @@ button {
 .challenge-stage,
 .expert-panel,
 .contribution-panel,
+.wave-panel,
 .upload-panel {
   padding: 18px;
 }
@@ -555,6 +558,39 @@ textarea {
 .challenge-stage {
   display: grid;
   gap: 16px;
+}
+
+.challenge-priority {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.challenge-priority article {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  background: #f2f7f7;
+  border-radius: 8px;
+}
+
+.challenge-priority span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.wave-section {
+  background: #fff;
+}
+
+.wave-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.wave-panel small {
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .screen-card {
@@ -945,7 +981,8 @@ textarea {
   }
 
   .dual-screen,
-  .score-strip {
+  .score-strip,
+  .challenge-priority {
     grid-template-columns: 1fr;
   }
 
