@@ -29,6 +29,7 @@ Open `index.html` in a web browser.
 - Simple Challenge MVP roadmap for creating challenges, submitting proof, rating, and leaderboards.
 - Interactive challenge builder for Talent, Sports, and Gaming lanes.
 - Leaderboard section with fair-play basics.
+- Product roadmap section for Phase 1, Phase 2, and Phase 3.
 - Sports challenge and team features.
 - Mobile game challenge section for games like PUBG Mobile and Mech Arena.
 - Local booking redirect buttons.
@@ -37,6 +38,7 @@ Open `index.html` in a web browser.
 - Pricing section for free audience use, creator upgrades, coach platform fees, and team/event plans.
 - Contribution section for founder support.
 - Public footer with domain, social links, and gaming affiliation disclaimer.
+- Account panel with role choices for challengers, audience voters, coaches, organizers, and gaming squads.
 
 ## Important next step
 
