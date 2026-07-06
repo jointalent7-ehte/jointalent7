@@ -2,6 +2,8 @@
 
 This is a beginner-friendly website prototype for Talent7.
 
+Live domain: https://www.jointalent7.com
+
 ## Files
 
 - `index.html` is the app screen and page content.
@@ -28,6 +30,7 @@ Open `index.html` in a web browser.
 - Sports coaching section.
 - Pricing section for free audience use, creator upgrades, coach platform fees, and team/event plans.
 - Contribution section for founder support.
+- Public footer with domain, social links, and gaming affiliation disclaimer.
 
 ## Important next step
 

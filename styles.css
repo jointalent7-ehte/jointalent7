@@ -839,14 +839,44 @@ textarea {
 }
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto;
   gap: 10px;
   align-items: center;
-  justify-content: space-between;
   padding: 24px clamp(18px, 5vw, 72px);
   color: #fff;
   background: var(--ink);
+}
+
+.footer div {
+  display: grid;
+  gap: 5px;
+}
+
+.footer span,
+.footer small {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+}
+
+.footer small {
+  grid-column: 1 / -1;
+}
+
+.footer-links {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.footer-links a {
+  padding: 8px 10px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  font-weight: 750;
 }
 
 @media (max-width: 960px) {
@@ -898,6 +928,14 @@ textarea {
 
   .screen-card {
     min-height: 310px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
 
