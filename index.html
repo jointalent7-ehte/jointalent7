@@ -15,6 +15,7 @@
     <nav class="main-nav" aria-label="Main navigation">
       <a href="#showcase">Showcase</a>
       <a href="#live">Live</a>
+      <a href="#builder">Builder</a>
       <a href="#sports">Sports</a>
       <a href="#games">Games</a>
       <a href="#experts">Experts</a>
@@ -317,6 +318,70 @@
           <strong>Build leaderboard</strong>
           <p>Show winners, top-rated challengers, and active lanes so people keep coming back.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section split-layout builder-section" id="builder">
+      <div class="section-heading">
+        <p class="eyebrow">Challenge builder</p>
+        <h2>Create the next match in under a minute</h2>
+        <p>The first working app should make challenge creation simple: choose a lane, set rules, invite an opponent, and collect proof after the match.</p>
+        <div class="builder-tabs" aria-label="Challenge builder lanes">
+          <button class="active" type="button" data-builder="talent">Talent</button>
+          <button type="button" data-builder="sports">Sports</button>
+          <button type="button" data-builder="gaming">Gaming</button>
+        </div>
+      </div>
+      <div class="builder-panel">
+        <div class="builder-preview">
+          <span id="builderLabel">Talent battle</span>
+          <h3 id="builderTitle">Breakdance battle</h3>
+          <p id="builderDescription">Two dancers accept a round, upload proof or go live later, and the audience rates footwork, flow, originality, and energy.</p>
+        </div>
+        <form class="builder-form">
+          <label>
+            Challenge title
+            <input id="builderTitleInput" type="text" value="Breakdance battle" />
+          </label>
+          <label>
+            Opponent or open invite
+            <input type="text" placeholder="@opponent or open invite" />
+          </label>
+          <label>
+            Rules
+            <textarea rows="4" placeholder="Example: 60-second round, no edits, upload proof within 24 hours."></textarea>
+          </label>
+          <button class="primary-button" type="button">Preview challenge</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section leaderboard-section" id="leaderboard">
+      <div class="section-heading">
+        <p class="eyebrow">Leaderboard</p>
+        <h2>Show winners and rising challengers</h2>
+        <p>Leaderboards make challenges addictive without needing live video on day one. Start with weekly rankings, public ratings, and proof clips.</p>
+      </div>
+      <div class="leaderboard-grid">
+        <article class="leader-card top-rank">
+          <span>#1</span>
+          <h3>Arya Moves</h3>
+          <p>Breakdance · 6.8/7 average · 12 wins</p>
+        </article>
+        <article class="leader-card">
+          <span>#2</span>
+          <h3>Rohan Smash</h3>
+          <p>Badminton · 6.6/7 average · 9 wins</p>
+        </article>
+        <article class="leader-card">
+          <span>#3</span>
+          <h3>Nova Squad</h3>
+          <p>Mobile gaming · 6.5/7 average · 7 wins</p>
+        </article>
+      </div>
+      <div class="rules-strip">
+        <strong>Fair-play basics:</strong>
+        <span>Clear rules, proof upload, report button, no fake results, and no prize pools until moderation is ready.</span>
       </div>
     </section>
 

@@ -8,6 +8,24 @@ const fileName = document.querySelector("#fileName");
 const contributionNote = document.querySelector("#contributionNote");
 const contributeButton = document.querySelector("#contributeButton");
 
+const builderContent = {
+  talent: {
+    label: "Talent battle",
+    title: "Breakdance battle",
+    description: "Two dancers accept a round, upload proof or go live later, and the audience rates footwork, flow, originality, and energy."
+  },
+  sports: {
+    label: "Sports challenge",
+    title: "Badminton duel",
+    description: "Players set singles or doubles rules, add court details, upload match proof, and let viewers rate the victory video."
+  },
+  gaming: {
+    label: "Gaming challenge",
+    title: "PUBG squad battle",
+    description: "Teams share room details, play the match, upload clips or screenshots, and climb weekly gaming leaderboards."
+  }
+};
+
 function paintRating(widget, rating) {
   const stars = widget.querySelectorAll(".stars button");
   const value = widget.querySelector(".rating-value");
@@ -101,5 +119,18 @@ document.querySelectorAll(".contribution-options button").forEach((button) => {
     button.classList.add("active");
     contributeButton.textContent = `Continue with ${button.dataset.amount}`;
     contributionNote.textContent = "Payments are not connected in this demo, but this shows the future support flow.";
+  });
+});
+
+document.querySelectorAll("[data-builder]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const content = builderContent[button.dataset.builder];
+
+    document.querySelectorAll("[data-builder]").forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    document.querySelector("#builderLabel").textContent = content.label;
+    document.querySelector("#builderTitle").textContent = content.title;
+    document.querySelector("#builderDescription").textContent = content.description;
+    document.querySelector("#builderTitleInput").value = content.title;
   });
 });

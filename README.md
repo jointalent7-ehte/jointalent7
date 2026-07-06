@@ -25,6 +25,8 @@ Open `index.html` in a web browser.
 - Side-by-side live challenge screen.
 - Challenge-first first wave section covering talent battles, sports challenges, and mobile gaming challenges.
 - Simple Challenge MVP roadmap for creating challenges, submitting proof, rating, and leaderboards.
+- Interactive challenge builder for Talent, Sports, and Gaming lanes.
+- Leaderboard section with fair-play basics.
 - Sports challenge and team features.
 - Mobile game challenge section for games like PUBG Mobile and Mech Arena.
 - Local booking redirect buttons.

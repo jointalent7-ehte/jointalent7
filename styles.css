@@ -300,6 +300,7 @@ button {
 .expert-panel,
 .contribution-panel,
 .wave-panel,
+.builder-panel,
 .upload-panel {
   background: #fff;
 }
@@ -342,10 +343,12 @@ button {
 .coach-card,
 .price-card,
 .game-card,
+.leader-card,
 .challenge-stage,
 .expert-panel,
 .contribution-panel,
 .wave-panel,
+.builder-panel,
 .upload-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -428,6 +431,7 @@ button {
 .expert-panel,
 .contribution-panel,
 .wave-panel,
+.builder-panel,
 .upload-panel {
   padding: 18px;
 }
@@ -665,6 +669,146 @@ textarea {
 .wave-panel small {
   color: var(--muted);
   line-height: 1.5;
+}
+
+.builder-section {
+  background: #fff;
+}
+
+.builder-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.builder-tabs button {
+  min-height: 40px;
+  padding: 9px 12px;
+  color: var(--ink);
+  background: #eef4f4;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.builder-tabs button.active {
+  color: #fff;
+  background: var(--teal);
+}
+
+.builder-panel {
+  display: grid;
+  gap: 16px;
+}
+
+.builder-preview {
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px;
+  color: #fff;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.62), transparent),
+    linear-gradient(135deg, var(--teal), var(--coral));
+  border-radius: 8px;
+}
+
+.builder-preview span {
+  width: fit-content;
+  padding: 7px 10px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.builder-preview h3,
+.builder-preview p {
+  margin: 0;
+}
+
+.builder-preview h3 {
+  font-size: 2rem;
+}
+
+.builder-preview p {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.5;
+}
+
+.builder-form {
+  display: grid;
+  gap: 14px;
+}
+
+.leaderboard-section {
+  background: #151819;
+  color: #fff;
+}
+
+.leaderboard-section .section-heading p:last-child {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.leaderboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.leader-card {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.leader-card span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: #151819;
+  background: var(--gold);
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.leader-card h3,
+.leader-card p {
+  margin: 0;
+}
+
+.leader-card p {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+}
+
+.top-rank {
+  background:
+    linear-gradient(135deg, rgba(242, 189, 69, 0.26), rgba(15, 143, 140, 0.14)),
+    rgba(255, 255, 255, 0.08);
+}
+
+.rules-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 16px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+}
+
+.rules-strip span {
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .screen-card {
@@ -1032,6 +1176,7 @@ textarea {
   .coach-grid,
   .pricing-grid,
   .game-grid,
+  .leaderboard-grid,
   .split-layout {
     grid-template-columns: 1fr;
   }
