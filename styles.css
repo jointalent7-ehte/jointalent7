@@ -583,6 +583,27 @@ textarea {
   background: #fff;
 }
 
+.early-demand {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.early-demand article {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  background: #f7fafa;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.early-demand span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .wave-panel {
   display: grid;
   gap: 14px;
@@ -982,7 +1003,8 @@ textarea {
 
   .dual-screen,
   .score-strip,
-  .challenge-priority {
+  .challenge-priority,
+  .early-demand {
     grid-template-columns: 1fr;
   }
 
