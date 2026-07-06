@@ -788,6 +788,77 @@ textarea {
   height: 18px;
 }
 
+.room-variants {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.variant-room {
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 18px;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 12px 36px rgba(20, 23, 25, 0.12);
+}
+
+.variant-room span {
+  width: fit-content;
+  padding: 7px 10px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.variant-room h3,
+.variant-room p {
+  margin: 0;
+}
+
+.variant-room h3 {
+  font-size: 2rem;
+}
+
+.variant-room p {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.5;
+}
+
+.variant-room div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.variant-room button {
+  min-height: 40px;
+  padding: 9px 12px;
+  color: var(--ink);
+  background: #fff;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.breakdance-room {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.06)),
+    linear-gradient(135deg, var(--coral), var(--gold));
+}
+
+.gaming-room {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.06)),
+    linear-gradient(135deg, var(--blue), var(--teal));
+}
+
 .mvp-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1350,6 +1421,7 @@ textarea {
   .top-challenge-grid,
   .leaderboard-grid,
   .room-layout,
+  .room-variants,
   .split-layout {
     grid-template-columns: 1fr;
   }
