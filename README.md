@@ -31,6 +31,7 @@ Open `index.html` in a web browser.
 - Leaderboard section with fair-play basics.
 - Product roadmap section for Phase 1, Phase 2, and Phase 3.
 - Contact / first-wave email section using jointalent7@gmail.com.
+- Founder workflow section for running the first wave manually.
 - Sports challenge and team features.
 - Mobile game challenge section for games like PUBG Mobile and Mech Arena.
 - Local booking redirect buttons.
