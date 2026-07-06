@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talent7 - Talent Showcase and Challenge App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Talent7 home">
+      <span class="brand-mark">7</span>
+      <span>Talent7</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#showcase">Showcase</a>
+      <a href="#live">Live</a>
+      <a href="#sports">Sports</a>
+      <a href="#games">Games</a>
+      <a href="#experts">Experts</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <button class="icon-button menu-toggle" type="button" aria-label="Open menu">☰</button>
+    <button class="primary-button account-open" type="button">Create account</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <img class="hero-image" src="talent7-hero.png" alt="Performers, athletes, and coaches representing Talent7" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Global talent. Real challenges. Public 7-star ratings.</p>
+        <h1>Talent7</h1>
+        <p class="hero-copy">Showcase photos and videos, challenge creators live side by side, join local sports battles, and learn from coaches and experts across the world.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#upload">Upload talent</a>
+          <a class="secondary-button" href="#live">Start challenge</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Live challenge preview">
+        <div class="live-status">Live battle</div>
+        <div class="dual-screen mini">
+          <div>
+            <span>Breakdance</span>
+            <strong>Arya</strong>
+          </div>
+          <div>
+            <span>Calisthenics</span>
+            <strong>Mateo</strong>
+          </div>
+        </div>
+        <div class="reaction-row">
+          <button type="button">❤ 12.8K</button>
+          <button type="button">★ 6.7</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section app-shell" id="showcase">
+      <div class="section-heading">
+        <p class="eyebrow">Main feed</p>
+        <h2>Talent showcase</h2>
+        <p>People can post photos or videos, receive public ratings out of 7 stars, earn love reactions, and get discovered.</p>
+      </div>
+
+      <div class="toolbar" role="tablist" aria-label="Feed filters">
+        <button class="filter-chip active" type="button" data-filter="all">All talents</button>
+        <button class="filter-chip" type="button" data-filter="dance">Dance</button>
+        <button class="filter-chip" type="button" data-filter="sport">Sports</button>
+        <button class="filter-chip" type="button" data-filter="music">Music</button>
+        <button class="filter-chip" type="button" data-filter="fitness">Fitness</button>
+      </div>
+
+      <div class="feed-grid" id="feedGrid">
+        <article class="post-card" data-category="dance">
+          <div class="media-frame dancer">
+            <span class="media-label">Video</span>
+            <span class="play-button">▶</span>
+          </div>
+          <div class="post-body">
+            <div>
+              <h3>Neon footwork final</h3>
+              <p>@arya.moves · India · Breakdance</p>
+            </div>
+            <div class="rating-widget" data-rating="6.4">
+              <div class="stars" aria-label="Rate this talent">
+                <button type="button" data-star="1">★</button>
+                <button type="button" data-star="2">★</button>
+                <button type="button" data-star="3">★</button>
+                <button type="button" data-star="4">★</button>
+                <button type="button" data-star="5">★</button>
+                <button type="button" data-star="6">★</button>
+                <button type="button" data-star="7">★</button>
+              </div>
+              <strong><span class="rating-value">6.4</span>/7</strong>
+            </div>
+            <div class="post-actions">
+              <button class="love-button" type="button">❤ <span>8.2K</span></button>
+              <button type="button">Challenge</button>
+              <button type="button">Comment</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="sport fitness">
+          <div class="media-frame athlete">
+            <span class="media-label">Photo</span>
+          </div>
+          <div class="post-body">
+            <div>
+              <h3>One-arm handstand hold</h3>
+              <p>@leo.bars · Brazil · Calisthenics</p>
+            </div>
+            <div class="rating-widget" data-rating="6.1">
+              <div class="stars" aria-label="Rate this talent">
+                <button type="button" data-star="1">★</button>
+                <button type="button" data-star="2">★</button>
+                <button type="button" data-star="3">★</button>
+                <button type="button" data-star="4">★</button>
+                <button type="button" data-star="5">★</button>
+                <button type="button" data-star="6">★</button>
+                <button type="button" data-star="7">★</button>
+              </div>
+              <strong><span class="rating-value">6.1</span>/7</strong>
+            </div>
+            <div class="post-actions">
+              <button class="love-button" type="button">❤ <span>5.9K</span></button>
+              <button type="button">Challenge</button>
+              <button type="button">Comment</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="music">
+          <div class="media-frame singer">
+            <span class="media-label">Video</span>
+            <span class="play-button">▶</span>
+          </div>
+          <div class="post-body">
+            <div>
+              <h3>Rooftop vocal run</h3>
+              <p>@nora.notes · Kenya · Singing</p>
+            </div>
+            <div class="rating-widget" data-rating="5.8">
+              <div class="stars" aria-label="Rate this talent">
+                <button type="button" data-star="1">★</button>
+                <button type="button" data-star="2">★</button>
+                <button type="button" data-star="3">★</button>
+                <button type="button" data-star="4">★</button>
+                <button type="button" data-star="5">★</button>
+                <button type="button" data-star="6">★</button>
+                <button type="button" data-star="7">★</button>
+              </div>
+              <strong><span class="rating-value">5.8</span>/7</strong>
+            </div>
+            <div class="post-actions">
+              <button class="love-button" type="button">❤ <span>4.1K</span></button>
+              <button type="button">Challenge</button>
+              <button type="button">Comment</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-layout" id="upload">
+      <div class="section-heading">
+        <p class="eyebrow">Creator studio</p>
+        <h2>Upload photos or videos</h2>
+        <p>This prototype lets a new user choose a file, write a caption, pick a talent type, and preview how an upload flow will feel.</p>
+      </div>
+      <form class="upload-panel">
+        <label>
+          Display name
+          <input type="text" value="New Talent7 Creator" />
+        </label>
+        <label>
+          Talent category
+          <select>
+            <option>Dance</option>
+            <option>Music</option>
+            <option>Calisthenics</option>
+            <option>Badminton</option>
+            <option>Swimming</option>
+            <option>Coaching</option>
+          </select>
+        </label>
+        <label>
+          Caption
+          <textarea rows="4" placeholder="Tell people what they are watching..."></textarea>
+        </label>
+        <label class="file-drop">
+          <input id="uploadInput" type="file" accept="image/*,video/*" />
+          <span>Choose a photo or video</span>
+          <small id="fileName">No file selected yet</small>
+        </label>
+        <button class="primary-button" type="button">Save draft post</button>
+      </form>
+    </section>
+
+    <section class="section" id="live">
+      <div class="section-heading">
+        <p class="eyebrow">Two-screen live module</p>
+        <h2>Side-by-side challenges</h2>
+        <p>Two challengers appear beside each other, while viewers react with love, rate publicly, and vote for the winner.</p>
+      </div>
+      <div class="challenge-stage">
+        <div class="dual-screen">
+          <div class="screen-card challenger-one">
+            <span class="live-badge">Live</span>
+            <h3>Maya</h3>
+            <p>Freestyle dance round</p>
+          </div>
+          <div class="screen-card challenger-two">
+            <span class="live-badge">Live</span>
+            <h3>Zain</h3>
+            <p>Power moves round</p>
+          </div>
+        </div>
+        <div class="challenge-controls">
+          <button class="primary-button" type="button">Invite challenger</button>
+          <button class="secondary-button" type="button">Open live chat</button>
+          <button class="secondary-button love-button" type="button">❤ Send love</button>
+        </div>
+        <div class="score-strip">
+          <span>Maya 6.6/7</span>
+          <span>Audience voting open</span>
+          <span>Zain 6.3/7</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sports">
+      <div class="section-heading">
+        <p class="eyebrow">Sports arena</p>
+        <h2>Challenge, team up, book, then upload victory</h2>
+        <p>Players can create sports challenges, form teams, redirect to local booking services, and later post victory videos.</p>
+      </div>
+      <div class="sports-grid">
+        <article class="action-card">
+          <h3>Badminton duel</h3>
+          <p>1v1 or doubles, local court booking, victory upload after match.</p>
+          <button type="button">Create challenge</button>
+          <a href="https://www.google.com/search?q=book+badminton+court+near+me" target="_blank" rel="noreferrer">Find court near me</a>
+        </article>
+        <article class="action-card">
+          <h3>Swimming race</h3>
+          <p>Pool race challenge, verified timing, medal clip upload.</p>
+          <button type="button">Form a race</button>
+          <a href="https://www.google.com/search?q=book+swimming+pool+near+me" target="_blank" rel="noreferrer">Find pool near me</a>
+        </article>
+        <article class="action-card">
+          <h3>Team builder</h3>
+          <p>Create a team, invite players, schedule practice, and post highlights.</p>
+          <button type="button">Create team</button>
+          <a href="https://www.google.com/search?q=sports+venue+booking+near+me" target="_blank" rel="noreferrer">Find venue near me</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section games-section" id="games">
+      <div class="section-heading">
+        <p class="eyebrow">Mobile game challenges</p>
+        <h2>Compete in PUBG, Mech Arena, and more</h2>
+        <p>Talent7 can include mobile gaming battles where players create rooms, form squads, upload proof clips, and build public challenge records.</p>
+      </div>
+      <div class="game-grid">
+        <article class="game-card pubg-card">
+          <span>Squad battle</span>
+          <h3>PUBG Mobile</h3>
+          <p>Create solo, duo, or squad challenges with room details, match rules, and victory uploads.</p>
+          <button type="button">Create PUBG challenge</button>
+        </article>
+        <article class="game-card mech-card">
+          <span>Arena duel</span>
+          <h3>Mech Arena</h3>
+          <p>Challenge another player or team, track results, and post the winning gameplay highlight.</p>
+          <button type="button">Start arena match</button>
+        </article>
+        <article class="game-card custom-game-card">
+          <span>Any mobile game</span>
+          <h3>Custom challenge</h3>
+          <p>Add games like Free Fire, COD Mobile, Clash Royale, BGMI, eFootball, or local favorites.</p>
+          <button type="button">Add game challenge</button>
+        </article>
+      </div>
+      <div class="monetization-note">
+        Gaming should be free for casual matches, but paid for tournaments, prize pools, verified results, anti-cheat review, leaderboards, and team/clan tools.
+      </div>
+    </section>
+
+    <section class="section split-layout" id="experts">
+      <div class="section-heading">
+        <p class="eyebrow">Live expert help</p>
+        <h2>Get guidance from the right person</h2>
+        <p>Users select a help area, then connect to an available expert by live video. Medical emergencies must always direct people to local emergency services first.</p>
+      </div>
+      <div class="expert-panel">
+        <div class="alert-box">
+          For urgent medical danger, call your local emergency number immediately. Talent7 can support guidance, but it cannot replace emergency care.
+        </div>
+        <div class="expert-buttons">
+          <button type="button">Medical guidance</button>
+          <button type="button">Plumbing</button>
+          <button type="button">Fitness form check</button>
+          <button type="button">Tech help</button>
+          <button type="button">Home repair</button>
+          <button type="button">Mental wellbeing</button>
+        </div>
+        <button class="primary-button" type="button">Request live expert</button>
+      </div>
+    </section>
+
+    <section class="section" id="coaching">
+      <div class="section-heading">
+        <p class="eyebrow">Sports coaching</p>
+        <h2>Learn by upload or live session</h2>
+        <p>Coaches can publish lessons, offer live coaching, review uploaded clips, and build trusted profiles.</p>
+      </div>
+      <div class="coach-grid">
+        <article class="coach-card">
+          <div class="coach-avatar">AK</div>
+          <h3>Aisha Khan</h3>
+          <p>Badminton footwork and match strategy</p>
+          <button type="button">Book live coaching</button>
+        </article>
+        <article class="coach-card">
+          <div class="coach-avatar">MR</div>
+          <h3>Marco Ruiz</h3>
+          <p>Calisthenics progressions and safe form</p>
+          <button type="button">Upload clip for review</button>
+        </article>
+        <article class="coach-card">
+          <div class="coach-avatar">SL</div>
+          <h3>Sofia Lee</h3>
+          <p>Swimming technique and race preparation</p>
+          <button type="button">Watch coaching videos</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="section-heading">
+        <p class="eyebrow">Business model</p>
+        <h2>Free for fans, paid for serious growth</h2>
+        <p>The audience should stay free. Talent7 can earn from coaches, advanced challenge tools, clubs, tournaments, and optional creator upgrades.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <p class="plan-label">Audience</p>
+          <h3>Free</h3>
+          <strong>0/month</strong>
+          <p>Watch, rate, react, comment, follow creators, and join the Talent7 community.</p>
+          <button type="button">Audience account</button>
+        </article>
+        <article class="price-card featured-plan">
+          <p class="plan-label">Creators</p>
+          <h3>Talent7 Plus</h3>
+          <strong>Optional subscription</strong>
+          <p>Advanced profile, longer uploads, live challenge access, analytics, and discovery boosts.</p>
+          <button type="button">Upgrade creator</button>
+        </article>
+        <article class="price-card">
+          <p class="plan-label">Instructors</p>
+          <h3>Coach Pro</h3>
+          <strong>Platform fee</strong>
+          <p>Paid coaching page, live classes, booking tools, student video reviews, and coach verification.</p>
+          <button type="button">Join as coach</button>
+        </article>
+        <article class="price-card">
+          <p class="plan-label">Teams</p>
+          <h3>Arena Pro</h3>
+          <strong>For clubs and events</strong>
+          <p>Tournaments, team management, official challenge rooms, leaderboards, and verified results.</p>
+          <button type="button">Create arena</button>
+        </article>
+      </div>
+      <div class="monetization-note">
+        <strong>Recommended launch rule:</strong>
+        keep uploads and viewing free first, then charge coaches and advanced challengers after people already love the core app.
+      </div>
+    </section>
+
+    <section class="section split-layout" id="contribute">
+      <div class="section-heading">
+        <p class="eyebrow">Support the builder</p>
+        <h2>Contribute to Talent7</h2>
+        <p>Talent7 is imagined as a standalone founder project. Supporters can contribute as a kind gesture to help the app grow.</p>
+      </div>
+      <div class="contribution-panel">
+        <p>If you like Talent7 and want to help build it along the way, any contribution would be really awesome.</p>
+        <div class="contribution-options" aria-label="Contribution amount ranges">
+          <button type="button" data-amount="0-50">0 - 50</button>
+          <button type="button" data-amount="50-200">50 - 200</button>
+          <button type="button" data-amount="200-1000">200 - 1000</button>
+          <button type="button" data-amount="1000+">&gt; 1000</button>
+        </div>
+        <button class="primary-button" type="button" id="contributeButton">Choose amount</button>
+        <small id="contributionNote">Payments are not connected in this demo.</small>
+      </div>
+    </section>
+  </main>
+
+  <aside class="account-drawer" id="accountDrawer" aria-hidden="true">
+    <div class="drawer-card">
+      <button class="icon-button drawer-close" type="button" aria-label="Close account panel">×</button>
+      <p class="eyebrow">Separate user accounts</p>
+      <h2>Join Talent7</h2>
+      <div class="account-tabs">
+        <button class="active" type="button" data-account-tab="signup">Sign up</button>
+        <button type="button" data-account-tab="login">Log in</button>
+      </div>
+      <form class="account-form" id="signupForm">
+        <label>
+          Full name
+          <input type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Username
+          <input type="text" placeholder="@yourname" />
+        </label>
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" />
+        </label>
+        <label>
+          Password
+          <input type="password" placeholder="Create password" />
+        </label>
+        <button class="primary-button" type="button">Create free account</button>
+      </form>
+      <form class="account-form hidden" id="loginForm">
+        <label>
+          Email or username
+          <input type="text" placeholder="@yourname" />
+        </label>
+        <label>
+          Password
+          <input type="password" placeholder="Your password" />
+        </label>
+        <button class="primary-button" type="button">Log in</button>
+      </form>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <strong>Talent7</strong>
+    <span>Prototype website for talent showcase, challenges, sports, coaching, expert help, and creator support.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
