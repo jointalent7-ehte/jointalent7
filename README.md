@@ -30,6 +30,7 @@ Open `index.html` in a web browser.
 - Interactive challenge builder for Talent, Sports, and Gaming lanes.
 - Leaderboard section with fair-play basics.
 - Product roadmap section for Phase 1, Phase 2, and Phase 3.
+- Contact / first-wave email section using jointalent7@gmail.com.
 - Sports challenge and team features.
 - Mobile game challenge section for games like PUBG Mobile and Mech Arena.
 - Local booking redirect buttons.

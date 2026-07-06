@@ -1082,6 +1082,60 @@ textarea {
   color: var(--teal);
 }
 
+.contact-section {
+  background: #fff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-card {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 36px rgba(20, 23, 25, 0.07);
+}
+
+.contact-card span {
+  width: fit-content;
+  padding: 7px 10px;
+  color: #fff;
+  background: var(--teal);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.contact-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.contact-direct {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 16px;
+  background: #f7fafa;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.contact-direct a {
+  color: var(--teal);
+  font-weight: 850;
+}
+
 .current-phase {
   border-color: rgba(15, 143, 140, 0.42);
   box-shadow: 0 18px 48px rgba(15, 143, 140, 0.16);
@@ -1484,6 +1538,7 @@ textarea {
   .top-challenge-grid,
   .leaderboard-grid,
   .roadmap-grid,
+  .contact-grid,
   .room-layout,
   .room-variants,
   .split-layout {
