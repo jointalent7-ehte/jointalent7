@@ -38,7 +38,7 @@ Open `index.html` in a web browser.
 - Expert help section with emergency safety message.
 - Sports coaching section.
 - Pricing section for free audience use, creator upgrades, coach platform fees, and team/event plans.
-- Contribution section for founder support.
+- Contribution section for founder support with USD amount ranges.
 - Public footer with domain, social links, and gaming affiliation disclaimer.
 - Account panel with role choices for challengers, audience voters, coaches, organizers, and gaming squads.
 

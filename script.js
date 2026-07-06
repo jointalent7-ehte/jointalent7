@@ -117,7 +117,7 @@ document.querySelectorAll(".contribution-options button").forEach((button) => {
   button.addEventListener("click", () => {
     document.querySelectorAll(".contribution-options button").forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
-    contributeButton.textContent = `Continue with ${button.dataset.amount}`;
+    contributeButton.textContent = `Continue with ${button.dataset.amount} USD`;
     contributionNote.textContent = "Payments are not connected in this demo, but this shows the future support flow.";
   });
 });
