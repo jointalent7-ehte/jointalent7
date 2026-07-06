@@ -24,6 +24,7 @@ Open `index.html` in a web browser.
 - Upload flow for photos and videos.
 - Side-by-side live challenge screen.
 - Challenge-first first wave section covering talent battles, sports challenges, and mobile gaming challenges.
+- Top 3 launch challenges: badminton doubles, breakdance battle, and mobile gaming match.
 - Simple Challenge MVP roadmap for creating challenges, submitting proof, rating, and leaderboards.
 - Interactive challenge builder for Talent, Sports, and Gaming lanes.
 - Leaderboard section with fair-play basics.

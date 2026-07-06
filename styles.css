@@ -332,7 +332,8 @@ button {
 .sports-grid,
 .coach-grid,
 .pricing-grid,
-.game-grid {
+.game-grid,
+.top-challenge-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
@@ -344,6 +345,7 @@ button {
 .price-card,
 .game-card,
 .leader-card,
+.top-challenge-card,
 .challenge-stage,
 .expert-panel,
 .contribution-panel,
@@ -615,6 +617,42 @@ textarea {
   background: #f4f8f7;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+.top-challenges-section {
+  background: #fff;
+}
+
+.top-challenge-card {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  background: #fff;
+}
+
+.top-challenge-card span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #fff;
+  background: var(--coral);
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.top-challenge-card h3,
+.top-challenge-card p {
+  margin: 0;
+}
+
+.top-challenge-card p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.top-challenge-card strong {
+  color: var(--teal);
 }
 
 .mvp-grid {
@@ -1176,6 +1214,7 @@ textarea {
   .coach-grid,
   .pricing-grid,
   .game-grid,
+  .top-challenge-grid,
   .leaderboard-grid,
   .split-layout {
     grid-template-columns: 1fr;
