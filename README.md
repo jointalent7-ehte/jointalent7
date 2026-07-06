@@ -23,7 +23,8 @@ Open `index.html` in a web browser.
 - Love reactions.
 - Upload flow for photos and videos.
 - Side-by-side live challenge screen.
-- Challenge-first first wave section highlighting badminton and breakdance as early user demand.
+- Challenge-first first wave section covering talent battles, sports challenges, and mobile gaming challenges.
+- Simple Challenge MVP roadmap for creating challenges, submitting proof, rating, and leaderboards.
 - Sports challenge and team features.
 - Mobile game challenge section for games like PUBG Mobile and Mech Arena.
 - Local booking redirect buttons.
